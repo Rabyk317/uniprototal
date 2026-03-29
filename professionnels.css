@@ -1,0 +1,73 @@
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar ul li a{
+    text-decoration: none !important;
+    color: #333;
+}
+.body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+.menu-container {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  font-family: Arial;
+}
+
+.menu-professionnels {
+  width: 280px;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.menu-professionnels li {
+  background: white;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.content {
+  display: none;
+  width: 500px;
+}
+
+.content .left {
+  float: left;
+  width: 50%;
+}
+
+.content .right {
+  float: right;
+  width: 50%;
+}
+.lubrifiants{
+  width: 500px;
+    display: 500px;
+}
+.navbar span{
+    display: flex;
+    color:#d80027;
+    align-items: center;
+    font-size: 0.7rem;
+    
+}
+.link-more{
+    display: flex;
+
+}

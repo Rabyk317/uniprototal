@@ -1,0 +1,114 @@
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar ul li a{
+    text-decoration: none !important;
+    color: #333;
+}
+.body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+.mega-menu-section {
+    background-color: #f1f0eb; /* Fond légèrement beige */
+    padding: 40px 0;
+}
+
+.mega-menu-grid {
+    display: flex;
+    background: #fdfdfb;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sidebar {
+    width: 350px;
+    padding: 30px;
+    border-right: 1px solid #e0e0e0;
+}
+
+.sidebar-title {
+    color: #8b3d48;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.sidebar-list {
+    list-style: none;
+}
+
+.sidebar-list li {
+    padding: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.sidebar-list li.active {
+    background-color: #e2e1dc;
+    color: #005a9c; /* Bleu Total */
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+}
+
+/* Cache les panneaux par défaut */
+.product-panel {
+    display: none;
+    width: 100%;
+}
+
+/* Affiche seulement le panneau actif */
+.product-panel.active {
+    display: flex;
+}
+
+/* Style spécifique pour les titres en rouge bordeaux */
+.content-columns h4 {
+    color: #8b3d48;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.content-columns h4:hover {
+    text-decoration: underline;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    color: #8b3d48;
+    cursor: pointer;
+}
+.link-more{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #ed1c24;
+
+}

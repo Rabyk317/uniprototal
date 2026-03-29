@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carte</title>
+    <link rel="stylesheet" href="cate.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="link-more">
+            <a href="accueil.html"><img src="c:\Users\User\Pictures\logo total.svg" alt="logo" width="100"></a>
+            <span>TotalEnergies <br>Sénégal</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="accueil.html"></a></li>
+                <li><a href="services.html">STATIONS 
+                    SERVICE</a> </li>
+                <li><a href="produits.html">NOS
+                     PRODUITS</a> </li>
+                <li> <a href="carte.html">CARTE
+                     Total Energies</a> </li>
+                <li><a href="professionnels.html">PROFESSIONNELS</a></li>
+                <li><a href="découvert.html">DECOUVRIR Total Energies</a></li>              
+            </ul>
+        </nav>
+    </header>
+   <div class="mega-menu-container">
+    
+    <div class="menu-left">
+        <div class="tab-item active" onclick="openTab(event, 'nos-cartes')">
+            Nos cartes <span class="arrow">></span>
+        </div>
+        <div class="tab-item" onclick="openTab(event, 'souscrire')">
+            Souscrire en ligne
+        </div>
+        <div class="tab-item" onclick="openTab(event, 'faq')">
+            FAQ
+        </div>
+    </div>
+
+    <div class="menu-right">
+        
+        <div id="nos-cartes" class="tab-content show">
+            <div class="content-grid">
+                <div class="col">
+                    <h4 id="titre-particuliers" class="clickable-title" onclick="selectTITLE('titre-particuliers')">Pour les particuliers</h4>
+                    <a href="#">AfricaPass</a>
+                    <a href="#" class="icon-link-container">
+                        <img src="c:\Users\User\Pictures\media-block---fr-png.webp" alt="icone" class="menu icon">
+                     <span>Je commande ma carte en ligne</span>
+                     </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4 id="titre-particuliers" class="clickable-title" onclick="selectTITLE(this)">Pour les professionnels</h4>
+                    <a href="#" class="icon-link-container multiline">
+                        <img src="c:\Users\User\Pictures\media-block-africapass.webp" alt="icone">
+                         <span class="icon-text">Découvrez la nouvelle carte transfrontalière AfricaPass</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="souscrire" class="tab-content">
+            <p>Ici le formulaire ou les infos de souscription.</p>
+        </div>
+
+        <div id="faq" class="tab-content">
+            <p>Ici les questions fréquentes.</p>
+        </div>
+
+    </div>
+</div>
+<script src="cartes.js"></script>
+
+</body>
+</html>

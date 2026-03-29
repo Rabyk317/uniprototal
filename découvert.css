@@ -1,0 +1,86 @@
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar ul li a{
+    text-decoration: none !important;
+    color: #333;
+}
+.body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+.mega-menu {
+  display: flex;
+  background: white;
+  border: 1px solid #ddd;
+  min-height: 300px;
+  font-family: sans-serif;
+}
+
+/* Colonne de gauche */
+.menu-tabs {
+  width: 30%;
+  background-color: #f9f9f9;
+  border-right: 1px solid #eee;
+}
+
+.tab-item {
+  padding: 20px;
+  cursor: pointer;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-item.active {
+  background-color: #fffbe6; /* Jaune très clair comme sur l'image */
+  color: #d80027; /* Rouge Total */
+  font-weight: bold;
+}
+
+/* Colonne de droite */
+.menu-content {
+  width: 70%;
+  padding: 30px;
+}
+
+.tab-content {
+  display: none; /* Cache tout par défaut */
+  grid-template-columns: 1fr 1fr; /* Sépare le contenu en deux colonnes */
+  gap: 20px;
+}
+
+.tab-content.show {
+  display: grid; /* Affiche uniquement le bloc actif */
+}
+
+.tab-content a {
+  display: block;
+  text-decoration: none;
+  color: #d80027;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.navbar span{
+    display: flex;
+    color:#d80027;
+    align-items: center;
+    font-size: 0.7rem;
+    
+}
+.link-more{
+    display: flex;
+
+}

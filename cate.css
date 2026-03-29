@@ -1,0 +1,173 @@
+
+.navbar span{
+    display: flex;
+    color:#d80027;
+    align-items: center;
+    font-size: 0.7rem;
+    
+}
+.link-more{
+    display: flex;
+
+}.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar ul li a{
+    text-decoration: none !important;
+    color: #333;
+}
+.body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f6f6f6;
+}
+/* Le conteneur parent */
+.mega-menu-container {
+    display: flex;         /* INDISPENSABLE : met gauche et droite côte à côte */
+    width: 100%;
+    background: white;
+    border: 1px solid #ddd;
+    min-height: 300px;
+}
+
+/* Colonne de gauche */
+.menu-left {
+    width: 250px;          /* Largeur fixe pour les onglets */
+    padding: 20px 0;
+}
+
+.tab-item {
+    padding: 15px 25px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-item.active {
+    background-color: #e6e6e6; /* Gris clair pour l'onglet sélectionné */
+}
+
+/* Colonne de droite */
+.menu-right {
+    flex: 1;               /* Prend tout le reste de la largeur */
+    background: #f6f6f6;
+    padding: 40px 80px;
+    border-left: 2px solid #004b93; /* Ta barre bleue verticale */
+}
+
+/* Grille interne à droite */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes à droite */
+    gap: 40px;
+}
+
+/* Gestion de l'affichage */
+.tab-content {
+    display: none;         /* On cache tout par défaut */
+}
+
+.tab-content.show {
+    display: flex;        
+    justify-content: space-between;
+    width: 900px;
+}
+
+h4 {
+    color: #c41230;        /* Le rouge de TotalEnergies */
+    margin-bottom: 30px;
+}
+.col h4{
+    color: #c41230;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+.col a{
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-bottom: 20px;
+}
+.col a:hover{
+    color: #c41230;
+}
+.icon-text{
+    color: #8e1e4f;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    max-width: 250px;
+
+}
+/* Style par défaut du titre/lien */
+.clickable-title {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+    border-bottom: 2px solid transparent; /* Prépare la bordure */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Classe ajoutée lors du clic */
+.active-link {
+    color: #c41230 !important; /* Rouge Total */
+    border-bottom: 2px solid #c41230; /* Le soulignement */
+    padding-bottom: 5px;
+}
+.col a{
+    color: #d80027;
+}
+/* --- Styles pour les conteneurs d'icônes --- */
+
+.icon-link-container {
+    display: flex;         /* INDISPENSABLE : aligne icône et texte côte à côte */
+    align-items: center;   /* Centre verticalement l'icône avec le texte */
+    text-decoration: none; /* Enlève le soulignement du lien complet */
+    color: #c41230;        /* Rouge Total pour tout le bloc */
+    margin-bottom: 15px;   /* Espace sous le bloc */
+    transition: color 0.3s;
+}
+
+/* Style spécifique pour l'icône */
+.menu-icon {
+    width: 24px;           /* Taille fixe de l'icône */
+    height: 24px;          /* Taille fixe de l'icône */
+    margin-right: 12px;    /* Espace crucial entre l'icône et le texte */
+    object-fit: contain;   /* S'assure que l'image ne soit pas déformée */
+}
+
+/* Style pour le texte à côté de l'icône */
+.icon-text {
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+/* --- Cas spécial : Texte long sur plusieurs lignes --- */
+/* (Comme pour "Découvrez la nouvelle carte...") */
+.icon-link-container.multiline {
+    align-items: flex-start; /* Aligne l'icône en haut si le texte est long */
+    margin-top: 5px;
+}
+
+.icon-link-container.multiline .menu-icon {
+    margin-top: 2px; /* Ajuste légèrement la hauteur de l'icône */
+}
+
+/* --- Effet au survol --- */
+.icon-link-container:hover .icon-text {
+    text-decoration: underline; /* Souligne juste le texte au survol */
+}

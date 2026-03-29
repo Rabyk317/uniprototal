@@ -1,0 +1,418 @@
+
+
+.right-side h2{
+    color: #0056b3;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+.btn-info{
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: 1px solid #ff0000;
+    color: #ff0000;
+    text-decoration: none;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar ul li a{
+    text-decoration: none !important;
+    color: #333;
+}
+.body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.quick-access {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.btn-red {
+    background-color: #ed1c24; 
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 50px; 
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Mise en page globale */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Grille à 3 colonnes */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 30px;
+
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+     background-color: #f6f6f6;
+     margin-bottom: 40px;
+     border-radius: 15px;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; 
+}
+
+.card-content h3 {
+    color: #333;
+    margin: 20px 0 10px;
+    font-size: 1.5rem;
+    
+}
+
+.card-content p {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.link-more {
+    color: #ed1c24;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    text-decoration: underline;
+}
+
+.link-more:hover {
+    border-bottom: 2px solid #ed1c24;
+}
+
+/* Section Actualités (Fond gris) */
+.news-section {
+    background-color: #f6f6f6; /* Gris très clair */
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.news-section h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+}
+
+.news-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.news-list li:last-child {
+    border-bottom: none;
+}
+
+.news-list .date {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.news-list p {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.all-news {
+    display: block;
+    margin-top: 20px;
+    color: #333;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Styles Généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 50px;
+}
+
+/* 1. La Grille Principale (Conteneur) */
+.info-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes de largeur égale */
+    gap: 30px; /* Espace entre les cartes */
+    max-width: 1200px;
+    margin: 0 auto; /* Centre la grille sur la page */
+}
+
+/* 2. Style des Cartes (Articles) */
+.info-card {
+    background-color:#f6f6f6 ;
+    border-radius: 15px; /* Coins arrondis sur la carte entière */
+    overflow: hidden; /* Important pour que l'image suive l'arrondi */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column; /* Aligne image et texte verticalement */
+    margin-bottom: 40px;
+}
+
+/* 3. Style des Images (Conteneur d'image) */
+.image-wrapper {
+    width: 100%;
+    height: 200px; /* Fixe une hauteur égale pour toutes les images */
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recadre l'image proprement sans la déformer */
+}
+
+/* 4. Style du Texte (Conteneur interne) */
+.content-wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pousse le lien vers le bas */
+    flex-grow: 1; /* Permet au texte de prendre toute la place disponible */
+}
+
+.content-wrapper h3 {
+    font-size: 2rem;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.content-wrapper p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* 5. Style du Bouton "En savoir plus" */
+.btn-more {
+    text-decoration: underline;
+    color: #ed1c24; /* Rouge TotalEnergies */
+    font-weight: bold;
+    font-size: 0.9rem;
+    align-self: flex-start; /* Aligne le bouton à gauche */
+    transition: color 0.3s ease;
+}
+
+.btn-more:hover {
+    color: #b12b28; /* Changement de couleur au survol */
+    
+}
+
+/* 6. Style pour le Responsive (Mobile) */
+@media (max-width: 768px) {
+    .info-grid-container {
+        grid-template-columns: 1fr; /* 1 seule colonne sur mobile */
+    }
+}
+.info-cardcard-app .btn-more{
+    text-decoration: none;
+}
+
+/* Styles Généraux de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* 1. Le Conteneur Principal (La Section) */
+
+.pro-hero .container{
+ background-color: #f6f6f6;
+}
+.right-side.pro-hero{
+    margin-bottom: 40px;
+}/* Conteneur principal */
+.sidebar {
+  width: 350px;
+  background-color: #f5f4ef; /* Couleur crème claire */
+  padding: 30px;
+  border-radius: 25px; /* Coins très arrondis comme sur l'image */
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Titre en rouge */
+.sidebar-title {
+  color: #8b3d48; /* Rouge bordeaux */
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+/* Liste des éléments */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 20px;
+}
+
+.sidebar-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between; /* Pousse la flèche à droite */
+  align-items: center;
+  transition: color 0.3s;
+}
+
+/* Style de la petite flèche */
+.arrow {
+  color: #8b3d48;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Effet au survol */
+.sidebar-menu a:hover {
+  color: #8b3d48;
+}
+
+.link-more{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 10px;
+
+}
+.hero-section{
+    background-color:#f6f6f6;
+}
+
+.image-wrapper p{
+    font-size: 0.5rem;
+}
+.site-footer {
+  display: flex; /* Aligne les colonnes avec de l'espace autour */
+  background-color: #f4f4f4;    /* Couleur de fond gris clair comme sur l'image */
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.footer-column h3 {
+  justify-content: space-around;
+  font-size: 14px;
+  color: #333;
+  text-transform: uppercase;   /* Pour mettre les titres en majuscules */
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;            /* Supprime les puces des listes */
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;       /* Enlever le soulignement des liens */
+  color: #666;
+  font-size: 13px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;  /* Ajoute un soulignement au survol */
+}
+.footer-middle {
+  display: flex;
+  justify-content: space-between; /* Espace les colonnes au maximum */
+  padding: 40px 50px;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ddd; /* Petite ligne de séparation si besoin */
+}
+
+.footer-column {
+  flex: 1; /* Chaque colonne prend la même part d'espace */
+  margin-right: 20px; /* Espace de sécurité entre les textes */
+}
+
+.footer-column h3 {
+  font-weight: bold;
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #666;
+}
+
+/* Style pour la ligne du bas (Mentions légales) */
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  color: #004b93; /* Couleur bleue typique des liens Total */
+  border-top: 1px solid #eee;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 5px;
+}
+
+/* Utile pour le titre "Solaire" qui est plus bas */
+.mt-20 {
+  margin-top: 40px;
+}
